@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet" href="contact.css">
+        <title>DEA Audio - Sipariş Onayı</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="navback"></div>
+        <div class="navbar">
+            <a href="main.html" class="navitem navlogo"><img src="DEAa.png" alt="logo" style="height: 70%; padding"></a>
+            
+            <div class="navbuttons">
+                <a href="main.html" class="navbutton">Ana Sayfa</a>
+                <div class="navbutton navdrop">
+                    Ürünler
+                    <div class="navdropmenu">
+                        <a href="headphones.html">Kulak Üstü</a>
+                        <a href="earphones.html">Kulak İçi</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navbutton">İletişim</a>
+                <a href="about.html" class="navbutton">Hakkımızda</a>
+            </div>
+            <a href="cart.html" class="navitem sepet"><img src="cart.svg" style="height: 70%"><div class="sepet-yazi"><p>Sepet</p><div class="sepet-toplam">3</div></div></a>
+        </div>
+        
+        <div class="sayfa-adi">Alıcı Bilgileri</div>
+        
+        <div class="container">
+            <form class="form" onsubmit="sepetiSifirla(); formSubmit(); return false">
+                <label for="fname">İsminiz</label>
+                <input type="text" name="fname" id="fname" class="text" required placeholder="Deniz">
+                
+                <label for="fmail">E-posta adresiniz</label>
+                <input type="email" name="fmail" id="fmail" class="text" required placeholder="deniz@email.com">
+                
+                <label for="fphone">Telefon numaranız</label>
+                <input type="tel" name="fphone" id="fphone" class="text" required placeholder="+90 532 XXX XX XX">
+                
+                <div class="aralik"></div>
+                
+                <label for="fadress">Teslimat Adresi</label>
+                <input type="text" name="fadress" id="fadress" class="text" required placeholder="Örnek Mah. Deneme Sk. No:24/8 İstanbul">
+                
+                <div class="aralik"></div>
+                
+                <label for="fcard">Kart Numarası</label>
+                <input type="number" name="fcard" id="fcard" class="text" required placeholder="XXXX XXXX XXXX XXXX">
+                
+                
+                <label>Son Kullanma Tarihi</label>
+                <div class="kart-row">
+                    <div class="kart-column">
+                        <label for="fmonth">Ay</label>
+                        <input type="number" min="1" max="12" name="fmonth" id="fmonth" class="text" required placeholder="08">
+                    </div>
+                    <div class="kart-column">
+                        <label for="fyear">Yıl</label>
+                        <input type="number" name="fyear" id="fyear" class="text" required placeholder="24">
+                    </div>
+                </div>
+                
+                
+                <div class="aralik"></div>
+                
+                <label>Alınan Ürünler</label>
+                <div class="alinan-urunler">
+                    <div class="template">0 x UK0 - Bir Çeşit Kulaklık</div>
+                </div>
+                
+                
+                <div class="aralik"></div>
+                
+                <input type="submit" class="submit" value="Siparişi Onayla">
+            </form>
+            <div class="formSubmit iletildi hidden">
+                Siparişiniz Onaylandı
+            </div>
+        </div>
+        
+        
+        <script src="navbar.js"></script>
+        <script src="cartLogic.js"></script>
+        <script src="payment.js"></script>
+    </body>
+</html>
+        

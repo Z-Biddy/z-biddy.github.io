@@ -1,0 +1,45 @@
+.soru {
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: #ffd445;
+}
+
+.cevap {
+    display: block;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.cevap > label:hover {
+    text-shadow: 0px 0px 10px #65c3ff;
+}
+
+label:hover:before {
+    background-color: #676767 !important;
+}
+
+input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.cevap > label::before {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #2e2e2e;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+input[type=radio]:checked + label::before{
+    background-color: #00bbff !important;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 8px #65c3ff;
+}

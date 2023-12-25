@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="cart.css">
+        <title>DEA Audio - Sepet</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <style>
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="navback"></div>
+        <div class="navbar">
+            <a href="main.html" class="navitem navlogo"><img src="DEAa.png" alt="logo" style="height: 70%; padding"></a>
+            
+            <div class="navbuttons">
+                <a href="main.html" class="navbutton">Ana Sayfa</a>
+                <div class="navbutton navdrop">
+                    Ürünler
+                    <div class="navdropmenu">
+                        <a href="headphones.html">Kulak Üstü</a>
+                        <a href="earphones.html">Kulak İçi</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navbutton">İletişim</a>
+                <a href="about.html" class="navbutton">Hakkımızda</a>
+            </div>
+            <a href="cart.html" class="navitem sepet"><img src="cart.svg" style="height: 70%"><div class="sepet-yazi"><p>Sepet</p><div class="sepet-toplam">3</div></div></a>
+        </div>
+        
+        <div class="sayfa-adi">Sepet</div>
+        
+        <div class="sepet-alani">
+            <div class="sepet-urunler">
+                <div class="sepet-bos">Sepetinizde hiç ürün bulunmamakta.</div>
+                <div data-id="-1" class="template">
+                    <div class=urun-bilgi>
+                        <img class="urun-resim" src="img/ki-b1.png">
+                        <div class="urun-yazi">
+                            <div class="urun-isim">IB1</div>
+                            <div class="urun-aciklama">Kablosuz Kulaklık</div>
+                        </div>
+                    </div>
+                    <div class="sepet-buton-alani">
+                        <div class="urun-fiyat">
+                            <div class="urun-fiyat-adet">3 x 100 TL =</div>
+                            <div class="urun-fiyat-toplam">300 TL</div>
+                        </div>
+                        <div class="sepet-butonlari">
+                            <div data-id="-1" class="sepet-buton sepet-buton-cikar buton-goster">-</div> 
+                            <div data-id="-1" class="sepet-orta sepet-adet">3</div>
+                            <div data-id="-1" class="sepet-buton sepet-buton-ekle buton-goster">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sepet-onay">
+                <div class="sepet-bilgi-alani">
+                    <div class="toplam">TOPLAM:</div>
+                    <div class="sepet-toplam-fiyat">10 TL</div>
+                </div>
+                <div class="sepet-onay-buton-alani">
+                    <a href="payment.html" class="sepet-onay-buton">Sepeti Onayla</a>
+                </div>
+            </div>
+        </div>
+        <script src="cartLogic.js"></script>
+        <script src="cart.js"></script>
+        <script src="navbar.js"></script>
+    </body>
+</html>

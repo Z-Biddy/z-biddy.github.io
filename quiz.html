@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="quiz.css">
+        <title>DEA Audio - Ödüllü Yarışma!</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="navback"></div>
+        <div class="navbar">
+            <a href="main.html" class="navitem navlogo"><img src="DEAa.png" alt="logo" style="height: 70%; padding"></a>
+            
+            <div class="navbuttons">
+                <a href="main.html" class="navbutton">Ana Sayfa</a>
+                <div class="navbutton navdrop">
+                    Ürünler
+                    <div class="navdropmenu">
+                        <a href="headphones.html">Kulak Üstü</a>
+                        <a href="earphones.html">Kulak İçi</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navbutton">İletişim</a>
+                <a href="about.html" class="navbutton">Hakkımızda</a>
+            </div>
+            <a href="cart.html" class="navitem sepet"><img src="cart.svg" style="height: 70%"><div class="sepet-yazi"><p>Sepet</p><div class="sepet-toplam">3</div></div></a>
+        </div>
+        
+        <div class="sayfa-adi">Ödüllü Yarışma</div>
+        
+        <div class="form-alani">
+            <form class="form" onsubmit="quiz(event)">
+                <label class="soru">Aşağıdakilerden hangisi bir kablolu ses bağlantısı türüdür?</label>
+                <div class="cevap">
+                    <input type="radio" id="1a" name="fq1" value="wifi">
+                    <label for="1a">Wi-Fi</label>
+                    <br>
+                    <input type="radio" id="1b" name="fq1" value="usbc">
+                    <label for="1b">USB-C</label>
+                    <br>
+                    <input type="radio" id="1c" name="fq1" value="bluetooth">
+                    <label for="1c">Bluetooth</label>
+                    <br>
+                    <input type="radio" id="1d" name="fq1" value="35mmjack">
+                    <label for="1d">3.5mm jack</label>
+                </div>
+                
+                
+                <label class="soru">Bluetooth teknolojisi ne için kullanılır?</label>
+                <div class="cevap">
+                    <input type="radio" id="2a" name="fq2" value="internet">
+                    <label for="2a">İnternete bağlanmak</label>
+                    <br>
+                    <input type="radio" id="2b" name="fq2" value="sarj">
+                    <label for="2b">Elektronik cihazları şarj etmek</label>
+                    <br>
+                    <input type="radio" id="2c" name="fq2" value="kablosuzveri">
+                    <label for="2c">Kablosuz veri aktarmak</label>
+                    <br>
+                    <input type="radio" id="2d" name="fq2" value="sugecirmez">
+                    <label for="2d">Elektronik cihazları su geçirmez yapmak</label>
+                </div>
+                
+                
+                <label class="soru">Kulaklıklarda ANC teknolojisi ne işe yarar?</label>
+                <div class="cevap">
+                    <input type="radio" id="3a" name="fq3" value="gecikme">
+                    <label for="3a">Düşük gecikmeli kablosuz veri aktarımı sağlar</label>
+                    <br>
+                    <input type="radio" id="3b" name="fq3" value="pilomru">
+                    <label for="3b">Pil ömrünü uzatır</label>
+                    <br>
+                    <input type="radio" id="3c" name="fq3" value="gurultu">
+                    <label for="3c">Gürültüyü önler</label>
+                    <br>
+                    <input type="radio" id="3d" name="fq3" value="kalite">
+                    <label for="3d">Ses kalitesini arttırır</label>
+                </div>
+                
+                
+                <label class="soru">Kulaklıklarda frekans tepkisi neyi ifade eder?</label>
+                <div class="cevap">
+                    <input type="radio" id="4a" name="fq4" value="aralik">
+                    <label for="4a">Kulaklığın üretebileceği sesin frekans aralığını</label>
+                    <br>
+                    <input type="radio" id="4b" name="fq4" value="siddet">
+                    <label for="4b">Kulaklığın üretebileceği sesin şiddetini</label>
+                    <br>
+                    <input type="radio" id="4c" name="fq4" value="pilomru">
+                    <label for="4c">Kablosuz kulaklığın pil ömrünü</label>
+                    <br>
+                    <input type="radio" id="4d" name="fq4" value="gecikme">
+                    <label for="4d">Kablosuz kulaklığın gecikme süresini</label>
+                </div>
+                
+                
+                <label class="soru">Aşağıdakilerden hangisi kulaklıklarda kullanılan bir sürücü türü değildir?</label>
+                <div class="cevap">
+                    <input type="radio" id="5a" name="fq5" value="dinamik">
+                    <label for="5a">Dinamik Sürücü</label>
+                    <br>
+                    <input type="radio" id="5b" name="fq5" value="elektrostatik">
+                    <label for="5b">Elektrostatik Sürücü</label>
+                    <br>
+                    <input type="radio" id="5c" name="fq5" value="planar">
+                    <label for="5c">Planar Manyetik Sürücü</label>
+                    <br>
+                    <input type="radio" id="5d" name="fq5" value="ferromanyetik">
+                    <label for="5d">Ferromanyetik Sürücü</label>
+                </div>
+                        
+                        
+                <input type="submit" class="submit" value="Yanıtları doğrula">
+            </form>
+            
+            <div class="dogru form iletildi hidden">
+                Tebrikler, tüm soruları doğru yanıtladınız! Hediyenizi sepetinize ekledik.
+            </div>
+                    
+            <div class="yanlis form iletildi hidden">
+                Ne yazık ki bütün soruları doğru cevaplayamadınız. :(
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+        <script src="navbar.js"></script>
+        <script src="cartLogic.js"></script>
+    </body>
+</html>
+        

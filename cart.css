@@ -1,0 +1,336 @@
+.sepet-alani {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.sepet-alani * {
+    display: flex;
+}
+
+.sepet-urunler {
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #090909;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: rgba(255, 255, 255, 0.05) 1px solid;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
+}
+
+.sepet-bos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.template {
+    display: none;
+}
+
+.urun {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    border: solid #2f2f2f 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    margin: 10px 0px;
+    transition: all 0.1s;
+}
+
+.urun-sil {
+    height: 64px;
+    background-color: #101010;
+    border: solid 1px rgba(255, 255, 255, 0.04);
+}
+
+.urun-sil > .urun-bilgi {
+    opacity: 50%;
+}
+
+.urun-sil > div > .urun-resim {
+    width: 42px;
+}
+
+.urun-sil > div > .urun-fiyat {
+    display: none;
+}
+
+.urun-sil > div > .urun-yazi {
+    position: relative;
+    background-image: none;
+    width: 120px;
+    height: 40px;
+    padding: 0px 10px;
+    justify-content: flex-end;
+}
+    
+.urun-sil > div > div > .urun-isim {
+    font-size: 30px;
+}
+    
+.urun-sil > div > div > .urun-aciklama {
+    font-size: 9px;
+    font-weight: 100;
+}
+
+.urun-sil > div > div > .sepet-buton {
+    width: 0px;
+    border: none;
+}
+
+.urun-sil > div > div > .sepet-orta {
+    width: 170px;
+    background-color: #0080ff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    transition: border-radius 0.2s, width 0.1s, background-color 0.1s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.urun-bilgi {
+    height: 100%;
+    width: calc(100% - 170px);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+
+.urun-resim {
+    width: 126px;
+    outline: solid 1px rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #141414;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s;
+}
+
+.urun-yazi {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.urun-yazi * {
+    transition: font-size 0.1s;
+}
+
+.urun-isim {
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.urun-aciklama {
+    font-size: 20px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media screen and (max-width: 710px) {
+    
+    .urun-yazi {
+        height: 126px;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .urun-isim {
+        font-size: 20px;
+    }
+    
+    .urun-aciklama {
+        font-size: 11px;
+    }   
+}
+
+@media screen and (max-width: 640px) {
+    .urun-yazi {
+        position: absolute;
+        width: 126px;
+        height: 126px;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 25%, transparent 75%);
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .urun-isim {
+        font-size: 20px;
+    }
+    
+    .urun-aciklama {
+        font-size: 11px;
+    }   
+    
+    .sepet-buton-alani {
+        border: none !important;
+    }
+    
+    .sepet-butonlari {
+        width: 165px;
+    }
+    
+    .toplam {
+        font-size: 26px !important;
+    }
+
+    .sepet-toplam-fiyat {
+        font-size: 30px !important;
+    }
+}
+
+.sepet-buton-alani {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-width: 0px 0px 0px 1px;
+    padding-left: 10px;
+}
+
+.sepet-butonlari {
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    user-select: none;
+}
+
+.sepet-butonlari * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sepet-orta {
+    white-space: nowrap;
+    width: 170px;
+    padding: 20px;
+    border: solid 1px rgba(250, 250, 250, 0.33);
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
+.sepet-orta-yan-son {
+    background-color: #404040 !important;
+    transition: all 0s;
+}
+
+.sepet-adet {
+    width: 70px;
+    background-color: #1C1C1C;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sepet-buton {
+    color: #090909;
+    font-size: 24px;
+    width: 0px;
+    transition: all 0.1s;
+    overflow: hidden;
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.buton-goster {
+    border-width: 1px;
+    width: 50px;
+}
+
+.sepet-buton-cikar {
+    background-color: #ff0045;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.sepet-buton-ekle {
+    background-color: #00ff89;   
+    border-radius: 0px 10px 10px 0px; 
+}
+
+.urun-fiyat {
+    flex-direction: column;
+    align-items: center;
+}
+
+.urun-fiyat-adet {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 250;
+}
+
+.urun-fiyat-toplam {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.disabled {
+    background-color: #294a38;
+    cursor: not-allowed;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.sepet-onay {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -30px;
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 40px 60px;
+    background-color: #1c1c1c;
+    border: solid #2f2f2f 1px;
+    border-radius: 0px 0px 25px 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
+}
+
+.sepet-bilgi-alani {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toplam {
+    color: #797979;
+    font-size: 36px;
+}
+
+.sepet-toplam-fiyat {
+    font-size: 46px;
+}
+
+.sepet-onay-buton-alani {
+    height: 100%;
+    align-items: center;
+}
+.sepet-onay-buton {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #0080ff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    user-select: none;
+}

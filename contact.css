@@ -1,0 +1,109 @@
+body {
+    /*
+    background-image: radial-gradient(rgb(52, 52, 52) 1px, transparent 0px);
+    animation: page-fade-in 0.3s, ozellik-arkaplan 12s linear infinite;
+    */
+    background-size: 30px 30px;
+}
+
+@keyframes ozellik-arkaplan {
+    0% {background-position: 0px 0px}
+    100% {background-position: 150px 30px}
+}
+
+.form-alani {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.form, .formSubmit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #090909;
+    padding: 50px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: rgba(255, 255, 255, 0.05) 1px solid;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
+}
+
+label {
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+input, textarea{
+    font-family: lexend;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    border: none;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    border: solid #2f2f2f 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    outline: solid 0px #484848;
+    transition: outline 0.05s;
+    box-sizing: border-box;
+}
+
+.text {
+    margin-bottom: 40px;
+    min-height: 47px;
+    resize: vertical;
+}
+
+.buyuk {
+    height: 220px;
+}
+
+.text:focus {
+    outline: solid 2px #ff9d00;
+    transition: outline 0.05s;
+}
+
+.submit {
+    background-color: #ff9d00;
+    background-image: linear-gradient(65deg, rgba(0,108,148,1) 0%, rgba(84,12,162,1) 12%, rgba(152,0,79,1) 24%, rgb(224, 168, 0) 50%, rgba(152,0,79,1) 76%, rgba(84,12,162,1) 88%, rgba(0,108,148,1) 100%); 
+    background-size: 1000%;
+    background-position: center;
+    color: #090909;
+    border: solid #ffd27f 1px;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #ffcc6e;
+}
+
+.submit:hover {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+    color: white;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    background-size: 400%;
+    background-position: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.iletildi {
+    animation: ailetildi 0.5s forwards;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    border: rgba(255, 255, 255, 0.05) 1px solid;
+    margin-top: calc((100vh - 70px)/2 - 180px);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
+}
+
+@keyframes ailetildi {
+      0% {opacity: 0%}
+     10% {opacity: 0%} 
+    100% {opacity: 100%}
+}

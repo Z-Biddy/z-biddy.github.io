@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="contact.css">
+        <title>DEA Audio - İletişim</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="navback"></div>
+        <div class="navbar">
+            <a href="main.html" class="navitem navlogo"><img src="DEAa.png" alt="logo" style="height: 70%; padding"></a>
+            
+            <div class="navbuttons">
+                <a href="main.html" class="navbutton">Ana Sayfa</a>
+                <div class="navbutton navdrop">
+                    Ürünler
+                    <div class="navdropmenu">
+                        <a href="headphones.html">Kulak Üstü</a>
+                        <a href="earphones.html">Kulak İçi</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navbutton">İletişim</a>
+                <a href="about.html" class="navbutton">Hakkımızda</a>
+            </div>
+            <a href="cart.html" class="navitem sepet"><img src="cart.svg" style="height: 70%"><div class="sepet-yazi"><p>Sepet</p><div class="sepet-toplam">3</div></div></a>
+        </div>
+        
+        <div class="sayfa-adi">İletişim</div>
+        
+        <div class="form-alani">
+            <form class="form" onsubmit="gonder(); return false">
+                <label for="fname">İsminiz</label>
+                <input type="text" name="fname" id="fname" class="text" required placeholder="Deniz">
+                
+                <label for="fmail">E-posta adresiniz</label>
+                <input type="email" name="fmail" id="fmail" class="text" required placeholder="deniz@email.com">
+                
+                <label for="fmessage">Mesajınız</label>
+                <textarea type="text" name="fmessage" id="fmessage" class="text buyuk" required placeholder="Merhaba..."></textarea>
+                
+                <input type="submit" class="submit">
+            </form>
+            
+            <div class="form iletildi hidden">
+                Mesajınız iletildi
+            </div>
+        </div>
+        <script src="contact.js"></script>
+        <script src="navbar.js"></script>
+        <script src="cartLogic.js"></script>
+    </body>
+</html>
+        

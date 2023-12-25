@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="main.css">
+        <title>DEA Audio - Anasayfa</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="navback"></div>
+        <div class="navbar">
+            <a href="main.html" class="navitem navlogo"><img src="DEAa.png" alt="logo" style="height: 70%; padding"></a>
+            
+            <div class="navbuttons">
+                <a href="main.html" class="navbutton">Ana Sayfa</a>
+                <div class="navbutton navdrop">
+                    Ürünler
+                    <div class="navdropmenu">
+                        <a href="headphones.html">Kulak Üstü</a>
+                        <a href="earphones.html">Kulak İçi</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navbutton">İletişim</a>
+                <a href="about.html" class="navbutton">Hakkımızda</a>
+            </div>
+            <a href="cart.html" class="navitem sepet"><img src="cart.svg" style="height: 70%"><div class="sepet-yazi"><p>Sepet</p><div class="sepet-toplam">3</div></div></a>
+        </div>
+        
+        <a href="headphones.html?urun=7" class="orta-alan">
+            <div class="orta">
+                <div class="orta-arka"></div>
+                <img class="orta-resim" src="img/ku-b4.png">
+                <div class="orta-text">
+                    <div>YENİ!</div>
+                    <div class="orta-kucuk">İlk haftaya özel 2500TL fiyat.</div>
+                    <div class="orta-kucuk">500TL indirim fırsatını kaçırmayın!</div>
+                </div>
+            </div>
+        </a>
+        <div class="kalan-sure">Bitiş tarihi: 23:00 26.12.2023 - Anlık zaman: 12:00 - Kalan süre: 3sa 2dk 1sn</div>
+        
+        <div class="marka">
+            <img src="DEAa.png" alt="logo" style="width: 300px;padding-bottom: 50px;">
+            <div style="text-align: center; font-weight: 200; font-size: 30px">
+                Üst düzey ses kalitesiyle
+                <br>
+                dinleme keyfinizi yeni seviyelere çıkarın.
+            </div>
+        </div>
+        
+        <a class="yarisma-duyuru" href="quiz.html">
+            Yarışma sorularını doğru yanıtlayıp kulaklık kazanın!
+        </a>
+        
+        <div class="kategoriler">
+            Tüm Ürünlerimiz
+            <div class="kategori">
+                <div class="buton bg-mor">
+                    <div class="buton-resim" style="background-image: url(img/ku-k2.png)"></div>
+                    <a href="headphones.html" class="buton-isim">Kulak Üstü</a>
+                </div>
+                <div class="buton bg-mor">
+                    <div class="buton-resim" style="background-image: url(img/ki-k2.png)"></div>
+                    <a href="earphones.html" class="buton-isim">Kulak İçi</a>
+                </div>
+                    
+            </div>
+            <br>
+            Çok Satanlar
+            <div class="coksatanlar">
+                <div class="buton bg-mavi">
+                    <div class="buton-resim" style="background-image: url(img/ku-k3.png)"></div>
+                    <a href="headphones.html?urun=2" class="buton-isim">UK3</a>
+                </div>
+                <div class="buton bg-mavi">
+                    <div class="buton-resim" style="background-image: url(img/ku-b3.png)"></div>
+                    <a href="headphones.html?urun=6" class="buton-isim">UB3</a>
+                </div>
+                <div class="buton bg-mavi">
+                    <div class="buton-resim" style="background-image: url(img/ki-k4.png)"></div>
+                    <a href="earphones.html?urun=3" class="buton-isim">IK4</a>
+                </div>
+                <div class="buton bg-mavi">
+                    <div class="buton-resim" style="background-image: url(img/ki-b4.png)"></div>
+                    <a href="earphones.html?urun=7" class="buton-isim">IB4</a>
+                </div>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+        <script src="main.js"></script>
+        <script src="cartLogic.js"></script>
+    </body>
+</html>
